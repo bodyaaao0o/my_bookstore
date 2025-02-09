@@ -1,96 +1,70 @@
-Project Description.
+# Getting Started with Create React App
 
-This project implements an online bookstore and user authentication and authorization system using JWT (JSON Web Token) in Spring Boot. The API allows you to register users, get an access token, and protect routes with authentication.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Main features
+## Available Scripts
 
-User registration
+In the project directory, you can run:
 
-Authorization with JWT token receipt
+### `npm start`
 
-Secure API endpoints available only to authenticated users
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-JWT token validation
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Using Spring Security to protect requests
+### `npm test`
 
-Selecting specific books for purchase (with filtering in the form of queries)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-All books are stored in the database
+### `npm run build`
 
-Adding books to the cart and adjusting the quantity
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Registration for delivery 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Technologies
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Java 22
+### `npm run eject`
 
-Spring Boot
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Spring Security
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-JWT (JSON Web Token)
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-BCrypt for password hashing
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Maven
+## Learn More
 
-Get it up and running
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Clone the repository:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+### Code Splitting
 
-Configure the database (if necessary) and specify the connection parameters in application.properties:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-spring.datasource.url=jdbc:mysql://localhost:3306/db_name
-spring.datasource.username=root
-spring.datasource.password=your_password
+### Analyzing the Bundle Size
 
-Run the application:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-mvn spring-boot:run
+### Making a Progressive Web App
 
-Using the API
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-1. Registering a user
+### Advanced Configuration
 
-POST /api/register
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-Request body:
+### Deployment
 
-{
-  “username": “user123”,
-  “password": “password123”
-}
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-2. Authorization (receiving a token)
+### `npm run build` fails to minify
 
-POST /api/login
-
-Request body:
-
-{
-  “username": “user123”,
-  “password": “password123”
-}
-
-Response:
-
-{
-  “token": “your_jwt_token_here”
-}
-
-3. Access to protected resources
-
-GET /api/protected
-
-Header:
-
-Authorization: Bearer your_jwt_token_here
-
-License.
-
-This project is distributed under the MIT License.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
